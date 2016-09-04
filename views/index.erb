@@ -48,7 +48,8 @@ input {
 #email {
   width: 80%;
   background: <%= settings.email_background_color %>;
-  font-family: inherit;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
   font-size: 1em;
   color: <%= settings.email_text_color %>;
   letter-spacing: 1px;
@@ -61,12 +62,14 @@ input {
   width: 80%;
   background: <%= settings.button_color %>;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-align: center;
   font-size: 1em;
   color: <%= settings.button_text_color %>;
   letter-spacing: 1px;
-  border-radius: 5px 5px 5px 5px;
+  /*border-radius: 5px 5px 5px 5px;*/
+  box-sizing: border-box;
+  padding: 9px;
   cursor: pointer;
   transition: background .3s ease-in-out;
 }
