@@ -2,7 +2,7 @@
 /* http://codepen.io/erikapdx/pen/BnfjH */
 body {
   background: <%= settings.background_color %>;
-  font-family: 'Lato', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: <%= settings.text_color %>;
   text-align: center;
 }
@@ -84,7 +84,7 @@ input {
 <form action="/invite" method="post" name="form for slack invitation request">
   <%= Rack::Csrf.tag(env) %>
   <div class="header">
-     <p>Entrar <br/><%= settings.team_name %></p>
+     <p> <br/><%= settings.team_name %></p>
   </div>
   <div class="description">
     <p><%= settings.team_desc %></p>
