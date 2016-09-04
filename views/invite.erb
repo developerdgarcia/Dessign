@@ -1,0 +1,22 @@
+<style type="text/css">
+body {
+  background: <%= settings.background_color %>;
+  font-family: 'Lato', sans-serif;
+  color: <%= settings.text_color %>;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: 17% auto;
+}
+</style>
+
+<div class="wrapper">
+  <h1>Tudo <%= settings.team_name %> is <%= @result ? 'Certo!' : 'Failed' %>.</h1>
+  <% if @result %>
+  <p>
+    Favor, verifique seu e-mail!(<%= @email %>).
+  </p>
+  <% end %>
+</div>
