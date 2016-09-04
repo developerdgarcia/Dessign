@@ -13,10 +13,10 @@ body {
 </style>
 
 <div class="wrapper">
-  <h1>Tudo <%= settings.team_name %> is <%= @result ? 'Certo!' : 'Failed' %>.</h1>
+  <h1>Tudo <%= settings.team_name %>         <%= @result ? 'Certo!' : 'Errado' %>.</h1>
   <% if @result %>
   <p>
-    Favor, verifique seu e-mail!(<%= @email %>).
+    Favor, verifique seu e-mail!  (<%= @email %>).
   </p>
   <% end %>
 </div>
