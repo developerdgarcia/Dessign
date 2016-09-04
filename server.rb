@@ -12,7 +12,7 @@ set :session_secret,          ENV['SESSION_SECRET_KEY']
 set :slack_invite_api_url,    'https://slack.com/api/auth.test?token=xoxp-76074146646-76074370448-76082857797-96f1c5e680&pretty=1'
 set :background_color,        ENV.fetch('BACKGROUND_COLOR', '#FFFFFF')
 set :text_color,              ENV.fetch('TEXT_COLOR', '#000000')
-set :email_background_color,  ENV.fetch('EMAIL_BACKGROUND_COLOR', '#D6D6D6')
+set :email_background_color,  ENV.fetch('EMAIL_BACKGROUND_COLOR', '#FFFFFF')
 set :email_text_color,        ENV.fetch('EMAIL_TEXT_COLOR', '#737373')
 set :button_color,            ENV.fetch('BUTTON_COLOR', '#F39C12')
 set :button_hover_color,      ENV.fetch('BUTTON_HOVER_COLOR', '#D78D19')
